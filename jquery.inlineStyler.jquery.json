@@ -1,0 +1,28 @@
+{
+    "name": "inlineStyler",
+    "title": "jQuery Inline CSS Styler",
+    "description": "A jQuery plugin that converts CSS styles into inline styles",
+    "keywords": [
+        "jQuery",
+        "css",
+        "style",
+        "inline",
+        "email"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "Karl Payne",
+        "email": "karl.m.payne@googlemail.com",
+        "url" : "http://www.karlpayne.co.uk/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/Karl33to/jquery.inlineStyler/blob/master/LICENSE"
+        }
+    ],
+    "homepage": "https://github.com/Karl33to/jquery.inlineStyler",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
