@@ -1,0 +1,121 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Merriweather Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color: #F0F0F0;
+  color: #444444;
+  font-weight: 300;
+}
+
+body,
+a,
+input,
+teatarea,
+select {
+  color: #444444;
+}
+
+a {
+  color: #444444;
+}
+a:hover {
+  color: #00afe3;
+}
+
+/* 
+// adds a symbol to all external links
+a[href^="http://"]:after {
+	content: " \21D7";
+}
+ */
+a img {
+  border: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 4rem 0 1rem 0;
+  line-height: 1.2;
+  font-family: 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 30px;
+  font-size: 3rem;
+}
+h1:first-of-type {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #ccc;
+}
+
+tbody th {
+  background-color: #ddd;
+}
+
+thead td {
+  background-color: #eee;
+}
+
+tbody td {
+  background-color: #f6f6f6;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		* {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+		body {font-family: verdana;}
+		textarea {width: 50%;height: 300px;margin: 0;}
+		iframe {width: 100%;height: 300px;}
+	</style>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="jquery.inlineStyler.min.js"></script>
+	<script type="text/javascript">
+		var cssRules = {
+			'propertyGroups' : {
+				'block' : ['margin', 'padding'],
+				'inline' : ['color'],
+				'headings' : ['font-size', 'font-family',]
+			},
+			'elementGroups' : {
+				'block' : ['DIV', 'P', 'H1'], 
+				'inline' : ['SPAN'], 
+				'headings' : ['H1', 'H2', 'H3', 'H4', 'H5', 'H6']
+			}
+		}
+		$(window).load(function() {
+			$('#before').val( $('iFrame').contents().find("body").html() );
+			$('iFrame').contents().find("body").inlineStyler( cssRules );
+			$('#after').val( $('iFrame').contents().find("body").html() );
+		});
+	</script>
+</head>
+<body>
+	<iframe src="demo-frame.html" frameborder="0" id="iFrame"></iframe>
+	<textarea name="" id="before">LOADING..... </textarea><textarea name="" id="after">LOADING..... </textarea>
+</body>
